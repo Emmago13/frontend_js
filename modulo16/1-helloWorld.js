@@ -39,9 +39,9 @@ console.log('Hello World')
 *
 **************************************/
 
-console.log(`
-  1. Crear un archivo .js con su nombre y dentro del mismo escribir un console.log con su nombre 
-     y otro con su apellido
-  2. Agregar otro console.log con su segundo nombre entre medio de los dos
-`)
+// console.log(`
+//   1. Crear un archivo .js con su nombre y dentro del mismo escribir un console.log con su nombre 
+//      y otro con su apellido
+//   2. Agregar otro console.log con su segundo nombre entre medio de los dos
+// `)
 
