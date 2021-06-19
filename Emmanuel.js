@@ -75,19 +75,68 @@
 
 //5-mathOperations
 
-let sum = 13 + 17
-console.log(sum);
-let res = sum - 5
-console.log(res);
-let div = res/5
-console.log(div);
-let mult = div*5
-console.log(mult);
-let exp = div**2
-console.log(exp);
-sum++
-console.log(sum);
-mult--
-console.log(mult);
+// let sum = 13 + 17
+// console.log(sum);
+// let res = sum - 5
+// console.log(res);
+// let div = res/5
+// console.log(div);
+// let mult = div*5
+// console.log(mult);
+// let exp = div**2
+// console.log(exp);
+// sum++
+// console.log(sum);
+// mult--
+// console.log(mult);
 
 //6-comparation
+
+// console.log(`b`>`a`);
+// console.log(`Emmanuel`>`Emanuel`);
+// console.log(2**3>3**2);
+// console.log(123/5<321/5);
+// console.log(`Emmanuel`==["Emmanuel"]);
+// console.log(`Emmanuel`===["Emmanuel"]);
+// console.log("Emmanuel"!="Emanuel");
+// console.log(2!=["2"]);
+// console.log(2==`2`);
+// Exercises
+// console.log(5>4); //true
+// console.log("apple">"pineapple"); //false
+// console.log("2">"12"); //true ->es porque al string lo lee como frase(izquierda a derecha)=>2>1
+// console.log(undefined == null); //true
+
+//7-condicionales
+
+// const myAge = 21
+// if (myAge>18) {console.log(`Eres mayor de edad`)}
+// else if (myAge<18) {console.log("Eres menor de edad")}
+// else {console.log("Tienes 18 años!")}
+
+// if (myAge>=21) {
+//     console.log(`Felicidades! Tenes ${myAge} años!`);
+// } else {
+//     console.log("No cumplis los requisitos");
+// }
+
+// myAge >= 21 ? console.log(`Eres mayor de edad!`) : console.log(`Sos menor`);
+// let myName = "Emmanuel"
+// let secName = "Alberto"
+// let lastName = "Gomez"
+// if (myName == "Emanuel") {
+//     console.log(`Tu nombre es ${myName}`);
+// } else {console.log(`Tu nombre es ${myName}, y no cumple los requisitos`);}
+// myName > secName ? console.log(`Tu primer nombre deberia ser ${secName}`) : console.log(`Tu primer nombre esta bien!`);
+// lastName != "Gom" ? console.log("Felicidades!") : console.log("Mala suerte!");
+//Exercises
+// let password = "myOldPassword"
+// if (password == "MyPassword1234") {
+//     console.log("Logged In");
+// } else {
+//     console.log("Wrong Password");
+// }
+// password == "MyPassword1234" ? console.log("Logged In") : console.log("Wrong Password");
+
+//8-logicOperators
+
