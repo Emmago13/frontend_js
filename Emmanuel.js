@@ -140,3 +140,39 @@
 
 //8-logicOperators
 
+// let hour = 11
+// if (hour>10||hour<18) {
+//     console.log(`La oficina esta abierta`)
+// }else {console.log(`La oficina esta cerrada`)}
+
+// hour = 9
+// if (hour<10 || hour>18) {
+//     console.log(`La oficina esta cerrada`)
+// }else {console.log(`La oficina esta abierta`)}
+
+// hour = 9
+// hour<10 || hour>18 ? console.log("La oficina esta cerrada") : console.log("La oficina esta abierta")
+
+// let prefixArg = "+54"
+// let prefixCl = "+58"
+// prefixArg == "+54" || prefixCl == "+56" ? console.log("Su llamada sera sin cargo") : console.log("Su llamada tendra costo adicional")
+
+// console.log(!"hola");
+// console.log(!0);
+// console.log(!!null);
+// console.log(!undefined);
+
+//Exercises
+
+// console.log(null || 2 || undefined); //2
+// console.log(1 && null && 2); //null
+// console.log(!`hola`); //false
+// console.log(null || 2 && 3 || 4); //3
+
+//9-bucles-while-for
+
+let index = 1
+while (index<3) {
+    console.log(index);
+    index++
+}
