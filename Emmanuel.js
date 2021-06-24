@@ -89,6 +89,15 @@
 // console.log(sum);
 // mult--
 // console.log(mult);
+// let resto = 6 % 2
+// console.log(resto);
+// resto = 7 % 2
+// console.log(resto);
+// if (resto==0) {
+//     console.log(`El numero es par`);
+// }else if (resto>=1){
+//     console.log(`El numero es impar`);
+// }
 
 //6-comparation
 
@@ -171,8 +180,8 @@
 
 //9-bucles-while-for
 
-let index = 1
-while (index<3) {
-    console.log(index);
-    index++
-}
+// let index = 1
+// while (index<3) {
+//     console.log(index);
+//     index++
+// }
