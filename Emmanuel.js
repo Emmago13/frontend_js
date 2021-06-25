@@ -185,3 +185,43 @@
 //     console.log(index);
 //     index++
 // }
+// let height = 155
+// while (height<=170) {
+//     console.log(`Your height is ${height}cm. Sorry! You're too short`);
+//     height++
+// }
+// do {
+//     console.log(`Your height is ${height}cm. Sorry! You're too short`);
+//     height++
+// } while (height<=166);
+
+// let street = [
+//     "obispo trejo",
+//     "independencia",
+//     "buenos aires",
+//     "ituzaingo",
+//     "chacabuco",
+//     "obispo salguero"
+// ]
+// let leng = street.length
+// let index = 0
+// let i = 6
+// while (index<leng && i>0) {
+//     console.log(`Estas en ${street[index]} y te faltan ${i} cuadras para llegar a destino`);
+//     index++
+//     i--
+// }
+// do {
+//     console.log(`Estas en ${street[index]} y te faltan ${i} cuadras para llegar a destino`);
+//     index++
+//     i--
+// } while (index<leng && i>0);
+
+// for (let index = 0; index < street.length && i>0; index++ && i--) {
+//     const element = street[index];
+//     console.log(`Estas en ${element} y te faltan ${i} cuadras para llegar a destino`);
+// }
+
+// for (let i = 0; i < 10; i++) {
+//     console.log(i);
+// }
