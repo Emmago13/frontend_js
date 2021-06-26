@@ -1,3 +1,5 @@
+//MODULO 16
+
 //1-helloWorld
 
 // console.log("Emmanuel");
@@ -225,3 +227,121 @@
 // for (let i = 0; i < 10; i++) {
 //     console.log(i);
 // }
+// let compras = [
+//     400,
+//     500,
+//     600,
+//     700,
+//     800,
+//     900,
+//     1000
+// ]
+// let env = 100
+// for (let index = 0; index < compras.length && env>0; index++ && env--) {
+//     const element = compras[index];
+//     if (element<800) {
+//         console.log(`Su compra es de $${element} y su envio es de $${env}`);
+//     }else {
+//         console.log(`Su compra es de $${element} y su envio es gratuito`);
+//     }
+// }      //DUDA ACA!!
+
+//Exercises
+
+// for (let num = 2; num <= 10; num++) {
+//     if (num % 2 == 0) {
+//         console.log(`El numero ${num} es par`);
+//     }
+// }
+// for (let i = 0; i < 3; i++){
+//     console.log(`numero ${i}!`);
+// }
+
+//10-switch
+
+// let zodSign = "Capricornio"
+// switch (zodSign) {
+//     case "Capricornio":
+//         console.log("Tienes un buen signo zodiaco!");
+//         break;
+//     case "Libra":
+//         console.log("Tienes un buen signo zodiaco!");
+//         break;
+//     case "Sagitario":
+//         console.log("Tienes un buen signo zodiaco!");
+//         break;
+//     default:
+//         console.log(`Lo lamento! ${zodSign} es un signo muy malo!`);
+//         break;
+// } 
+// let milanesa = "soja"
+// switch (milanesa) {
+//     case "pollo":
+//         console.log("Tienes un buen gusto!");
+//         break;
+//     case "carne":
+//         console.log("Tienes un buen gusto!");
+//         break;
+//     default:
+//         console.log("Tienes un pesimo gusto!");
+//         break;
+// }
+// let favGame = "Call of Duty"
+// switch (favGame) {
+//     case "Modern Combat":
+//         console.log(`Elegiste ${favGame}. Tienes un buen gusto!`);
+//         break;
+//     case "Call of Duty":
+//         console.log(`Elegiste ${favGame}. Tienes un buen gusto!`);
+//         break;
+//     case "Fifa":
+//         console.log(`Elegiste ${favGame}. Tienes un buen gusto!`);
+//         break;
+//     default:
+//         console.log(`Elegiste ${favGame}. Tienes un pesimo gusto!`);
+//         break;
+// }
+
+//Exercises
+
+// let navegador = `Opera`
+// if (navegador == `Edge`) {
+//     console.log(`¡Tienes Edge!`);
+// }else if (navegador == `Chrome`) {
+//     console.log('Esta bien, soportamos estos navegadores también');
+// }else if (navegador ==`Safari`) {
+//     console.log('Esta bien, soportamos estos navegadores también');
+// }else if (navegador ==`Firefox`) {
+//     console.log('Esta bien, soportamos estos navegadores también');
+// }else if (navegador ==`Opera`) {
+//     console.log('Esta bien, soportamos estos navegadores también');
+// }else{
+//     console.log('¡Esperamos que esta página se vea bien!');
+// }
+
+// let a = 1
+// switch (a) {
+//     case 0:
+//         console.log( 0 );
+//         break;
+//     case 1:
+//         console.log( 1 );
+//         break;
+//     case 2:
+//     case 3:
+//         console.log( `2,3` );
+//         break;
+// }
+
+//MODULO 17
+
+//1-functions
+
+let food = "pizza"
+function favFood() {
+    food = "milanesa"
+    console.log(`Mi comida favorita es la ${food}`);
+}
+console.log(food);
+favFood()
+console.log(food);
