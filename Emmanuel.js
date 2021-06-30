@@ -337,11 +337,74 @@
 
 //1-functions
 
-let food = "pizza"
-function favFood() {
-    food = "milanesa"
-    console.log(`Mi comida favorita es la ${food}`);
-}
-console.log(food);
-favFood()
-console.log(food);
+// let food = "pizza"
+// function favFood() {
+//     food = "milanesa"
+//     console.log(`Mi comida favorita es la ${food}`);
+// }
+// console.log(food);
+// favFood()
+// console.log(food);
+// function favBusiness(streets, numbers, name) {
+//     console.log(`En ${streets} al ${numbers} se encuentra el negocio ${name}`);
+// }
+// favBusiness(`independencia`,492, 'Carnave')
+// favBusiness('Bv. Illia', 375, 'Rapipago')
+
+// function getMovie() {
+//     const max = 5
+//     const min = 1
+//     const getNumber = Math.round(Math.random() * (max - min)) + min;
+//     switch (getNumber) {
+//         case 1:
+//             console.log("Gone Girl");
+//             break;
+//         case 2:
+//             console.log("Fight Club");
+//             break;
+//         case 3:
+//             console.log("Scarface");
+//             break;
+//         case 4:
+//             console.log("Casino");
+//             break;    
+//         default:
+//             console.log("Goodfellas");
+//             break;
+//     }
+// }
+// getMovie ()
+// function getRandom(minim, maxim) {
+//     const getRandomNum = Math.round(Math.random()*(maxim - minim)) + minim;
+//     console.log(getRandomNum); 
+// }
+// getRandom(1,100)
+// let sum =(a,b) => a + b
+// console.log(sum(1,2));
+
+//Exercises
+
+// let checkAge = (age) => {
+//     age>18 ? console.log(true) : console.log("No eres mayor de edad todavia");
+// }
+// checkAge(21)
+// function calcMin(a,b) {
+//     if (a<b) {
+//         console.log(a);
+//     }else{
+//         console.log(b);
+//     }
+// }
+// calcMin(3,4)
+// function calcDouble(a,b) {
+//     return a*b
+// }
+// console.log(calcDouble(3,2));
+// let calcMin = (a,b) => {
+//     a<b ? console.log(a) : console.log(b);
+// }
+// calcMin(12,4)
+// let calcDouble = (a,b) => a*b
+// console.log(calcDouble(3,2));
+
+//2-classes
