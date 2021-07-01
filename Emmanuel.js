@@ -408,3 +408,114 @@
 // console.log(calcDouble(3,2));
 
 //2-classes
+
+// class User {
+//     constructor(name,lastname,course,date,homework){
+//         this.name = name;
+//         this.lastName = lastname;
+//         this.course = course;
+//         this.date = date;
+//         this.homework = homework;
+//     }
+
+//     sayHi() {
+//         console.log(`Hola ${this.name} ${this.lastName}! Estas inscripto en ${this.course}`);
+//     }
+//     sayHomework() {
+//         console.log(`Hoy ${this.date}, tienes ${this.homework} tareas para hacer`);
+//     }
+// }
+// let user = new User("Emmanuel","Gomez","Fullstack Dev")
+// user.sayHi()
+// let user1 = new User("Marisol","Gomez","Microeconomia 1","30 de junio",5)
+// user1.sayHi()
+// user1.sayHomework()
+
+// class Paper {
+//     constructor(name, date, course){
+//         this.name = name;
+//         this.date = date;
+//         this.course = course;
+//     }
+//     sayName() {
+//         console.log(`El paper ${this.name} debe ser leido para el dia ${this.date}`);
+//     }
+//     sayCourse() {
+//         console.log(`El paper ${this.name} pertenece al curso ${this.course}`);
+//     }
+// }
+// let paper = new Paper("Inflation Targeting","2 de Agosto","Macroeconomia 2")
+// paper.sayName()
+// paper.sayCourse()
+
+//3-objects
+
+// let user = {
+//     name: "Emmanuel",
+//     age: 21,
+//     course: "Fullstack Dev"
+// }
+// console.log(user.name);
+// console.log(user.course);
+
+// user.city = "Cordoba"
+// console.log(user);
+// console.log(user.city);
+// delete user.age
+// console.log(user);
+// user['age'] = 22
+// console.log(user.age);
+// console.log(user);
+// delete user.age
+// console.log(user);
+
+// for (const checkUser in user) {
+//     console.log(checkUser);
+//     console.log(user[checkUser]);
+// }
+
+//Exercises
+
+let user = {}
+user.name = "John"
+user.surname = "Smith"
+user.name = "Pete"
+delete user.name
+
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130
+}
+
+function sum(object) {
+    let sum = 0;
+    for (const key in object) {
+        if (object.hasOwnProperty(key)) {
+            sum += object[key];
+        }
+    }
+    return sum;
+}
+let summed =sum(salaries);
+console.log(summed);
+
+let menu = {
+  width: 200,
+  height: 300,
+  title: "Mi menú"
+};
+
+function multiplyNumeric(obj) {
+    let mult = 0
+    for (const key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            mult = (obj[key])*2;
+        }
+    }
+    return mult;
+}
+let multiplied = multiplyNumeric(menu)
+console.log(multiplied);
+
+  
