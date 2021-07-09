@@ -244,7 +244,7 @@
 //     }else {
 //         console.log(`Su compra es de $${element} y su envio es gratuito`);
 //     }
-// }      //DUDA ACA!!
+// }     
 
 //Exercises
 
@@ -476,46 +476,132 @@
 
 //Exercises
 
-let user = {}
-user.name = "John"
-user.surname = "Smith"
-user.name = "Pete"
-delete user.name
+// let user = {}
+// user.name = "John"
+// user.surname = "Smith"
+// user.name = "Pete"
+// delete user.name
 
-let salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130
+// }
+
+// function sum(object) {
+//     let sum = 0;
+//     for (const key in object) {
+//         if (object.hasOwnProperty(key)) {
+//             sum += object[key];
+//         }
+//     }
+//     return sum;
+// }
+// let summed =sum(salaries);
+// console.log(summed);
+
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title: "Mi menú"
+// }
+
+// function multiplyNumeric(obj) {
+//     for (let key in obj) {
+//         if (typeof obj[key] == 'number') {
+//             obj[key] *= 2
+//         }
+//     }
+// }
+// multiplyNumeric(menu)
+// console.log(menu)
+
+//4-arrays
+
+// let fruits = [
+//     "banana",
+//     "manzana",
+//     "pomelo",
+//     "kiwi"
+// ]
+// console.log(fruits);
+// fruits.pop()
+// console.log(fruits);
+// fruits.push("mango")
+// console.log(fruits);
+// fruits[2]= "sandia"
+// console.log(fruits);
+// fruits.shift()
+// console.log(fruits);
+// fruits.unshift("naranja")
+// console.log(fruits);
+// fruits.push("manzana","pera","naranja")
+// console.log(fruits);
+
+// let users = [
+//     {name: "Emmanuel"},
+//     {name: "Juan"},
+//     {name: "Emiliano"}
+// ]
+// console.log(users);
+// console.log(users[0]);
+
+// let musicGenre = ["Jazz","Blues"]
+// console.log(musicGenre);
+// musicGenre.push("Rock-n-Roll")
+// console.log(musicGenre);
+// musicGenre[1] = "Classics"
+// console.log(musicGenre);
+// musicGenre.shift()
+// console.log(musicGenre);
+// musicGenre.unshift("Rap","Reggae")
+// console.log(musicGenre);
+
+// const num = [12, 45, 32 ,56 ,190]
+// let summed = 0
+// for (const x of num) {
+//     summed += x
+// }
+// console.log(summed);
+
+//5-arrayMethods
+
+// let arr = ["yo","estudio","JavaScript"]
+// arr.splice(1,1,"aprendo")
+// console.log(arr);
+// arr.splice(2,1,"Programacion")
+// console.log(arr);
+// let fruits = []
+// fruits.splice(0,1,"mango")
+// console.log(fruits);
+// fruits.push("manzana","naranja")
+// console.log(fruits);
+// fruits.splice(0,0,"banana")
+// console.log(fruits);
+// let newArr = arr.splice(0, 3, "con","muchas","ganas")
+// console.log(arr);
+// console.log(newArr);
+// arr.splice(3, 3, "con","muchas","ganas")
+// console.log(arr);
+
+// console.log(arr.slice(0,3));
+
+// let getNumber = [0,10,20,30,40,50,60]
+// console.log(getNumber.slice(0,6)) 
+
+// let newNumber = [1,2,3]
+// arr = newNumber.concat([4,5,6])
+// console.log(arr);
+// console.log(newNumber);
+// console.log(newNumber.concat([4,5,6]));
+
+// let arr = ["yo","estudio","JavaScript"]
+// console.log(arr.concat(["con","muchas","ganas"]));
+
+let sum = 0
+const numbers = [1,2,3,4,5,6]
+numbers.forEach(funcNum)
+function funcNum(item) {
+    sum += item
 }
-
-function sum(object) {
-    let sum = 0;
-    for (const key in object) {
-        if (object.hasOwnProperty(key)) {
-            sum += object[key];
-        }
-    }
-    return sum;
-}
-let summed =sum(salaries);
-console.log(summed);
-
-let menu = {
-  width: 200,
-  height: 300,
-  title: "Mi menú"
-};
-
-function multiplyNumeric(obj) {
-    let mult = 0
-    for (const key in obj) {
-        if (obj.hasOwnProperty(key)) {
-            mult = (obj[key])*2;
-        }
-    }
-    return mult;
-}
-let multiplied = multiplyNumeric(menu)
-console.log(multiplied);
-
-  
+console.log(sum);   
