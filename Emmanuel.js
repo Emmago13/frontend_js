@@ -544,7 +544,7 @@
 //     {name: "Emiliano"}
 // ]
 // console.log(users);
-// console.log(users[0]);
+// console.log(users[0 ]);
 
 // let musicGenre = ["Jazz","Blues"]
 // console.log(musicGenre);
@@ -598,10 +598,154 @@
 // let arr = ["yo","estudio","JavaScript"]
 // console.log(arr.concat(["con","muchas","ganas"]));
 
-let sum = 0
-const numbers = [1,2,3,4,5,6]
-numbers.forEach(funcNum)
-function funcNum(item) {
-    sum += item
-}
-console.log(sum);   
+// let sum = 0
+// const numbers = [1,2,3,4,5,6]
+// numbers.forEach(funcNum)
+// function funcNum(item) {
+//     sum += item
+// }
+// console.log(sum); 
+
+// function multNum(item,index,arr) {
+//     arr[index] = item * 2
+//     console.log(arr[index]);
+// }
+// numbers.forEach(multNum)
+
+// numbers.forEach(function Hi(item,index,array) {
+//     if (array[index] >= 3) {
+//         console.log('This cannot happen');
+//     }else{console.log('Thats ok!');}
+// })
+
+// const letColor = ["red","purple","orange","gray","green","black"]
+
+// letColor.forEach(function markColor(item) {
+//     item === "gray" ? console.log(`${item} <-This one!`) : console.log(`${item}`);
+// })
+
+// const num = [1,2,3,4,5,6,1,2,3]
+// console.log(num.indexOf(3));
+// console.log(num.indexOf(1));
+// console.log(num.lastIndexOf(1));
+// console.log(num.includes(2));
+// const fruits = ["apple","orange","banana","orange","mango"]
+// console.log(fruits.indexOf("orange"));
+// console.log(fruits.lastIndexOf("orange"));
+
+// const shopList = ["bread","milk","eggs","cake","steak"]
+// function shop(item) {
+//     if (shopList.includes(item) === true) {
+//         console.log(`Do not add it!`);
+//     }else{console.log(`Add it!`);}
+// }
+// shop("cookies")
+// shopList.push("cookies")
+// shop("cookies")
+// console.log(shopList);
+// shop("cereal")
+// shopList.push("cereal")
+// shop("cereal")
+// console.log(shopList.indexOf("eggs"));
+// console.log(shopList.indexOf("cake"));
+
+// let movies = [{movie: "Figth Club", rate: 80},
+//     {movie: "Inception", rate: 95},
+//     {movie: "Interestellar", rate: 90},
+//     {movie: "Contratiempo", rate: 70},
+//     {movie: "Ghost", rate: 60},
+//     {movie: "Wonder", rate: 75},
+//     {movie: "Beautiful boy", rate: 75},
+//     {movie: "21 Blackjack", rate: 80}
+// ]
+// let movie = movies.find(item => item.rate >= 90)
+// console.log(movie);
+// let movieIndex =movies.findIndex(item => item.rate <= 70)
+// console.log(movieIndex);
+// let getMovies = movies.filter(item => item.rate >= 90)
+// console.log(getMovies);
+// let someMovies = movies.filter(item => {
+//     const name = item.movie.split('')
+//     return name[0] === "I"
+// })
+// console.log(someMovies);
+
+
+// let users = [
+//   {id: 1, name: "Juan", age: 27},
+//   {id: 2, name: "David", age: 21},
+//   {id: 3, name: "Franco", age: 31},
+//   {id: 4, name: "Emmanuel", age: 22},
+//   {id: 5, name: "Elias", age: 23},
+//   {id: 6, name: "Francisco", age: 29},
+//   {id: 7, name: "Erik", age: 34}
+// ];
+
+// let someUsers = users.filter(item => {
+//   const string = item.name.split('');
+//   return string[0] === "E" 
+// });
+// console.log(someUsers);
+// let checkAge = users.filter(item => item.age >= 25)
+// console.log(checkAge);
+// let checkId = users.find(item => item.id === 1)
+// console.log(checkId);
+
+// let users = [
+//     {name: "Emmanuel", lastname: "Gomez"},
+//     {name: "Marcio", lastname: "Prado"},
+//     {name: "Alejo", lastname: "Arguello"},
+//     {name: "Tomas", lastname: "Farias"},
+//     {name: "Braian", lastname: "Romero"},
+//     {name: "Uriel", lastname: "Lopez"},
+//     {name: "Franco", lastname: "Lopez"}
+// ]
+// let user = users.map(item => [item.name,item.lastname].join(" "))
+// console.log(user);
+// console.log(user.reverse());
+// console.log(users.sort()); //Doesn't work
+// console.log(user.sort());
+
+// let numbers = [1,2,3,4,6,7,8,9,10]
+// let changeNum = numbers.map(item => item * 10)
+// console.log(changeNum);
+// console.log(numbers.reverse());
+// console.log(numbers.sort());
+
+// const days = [
+//     "Monday",
+//     "Tuesday",
+//     "Wednesday",
+//     "Thursday",
+//     "Friday",
+//     "Saturday",
+//     "Sunday"
+// ]
+// console.log(days.reverse());
+// console.log(days.sort());
+
+//Exercises
+
+// let users = [
+//   {id: 1, name: "Fran", age: 31},
+//   {id: 2, name: "Katy", age: 18},
+//   {id: 3, name: "Federico", age: 38},
+//   {id: 4, name: "Maria", age: 24},
+//   {id: 5, name: "John", age: 45},
+//   {id: 6, name: "Fran", age: 7},
+// ];
+// console.log(users);
+// users.splice(0,1)
+// users.splice(1,2)
+// console.log(users);
+// users.push({id: 7, name: "Emmanuel", age: 22},{id: 8, name: "Rafael", age: 31},{id: 9, name: "Roger", age: 37})
+// console.log(users);
+// users.map(item => {console.log(`Hola me llamo ${item.name} y tengo ${item.age} años`);})
+// let user = users.find(item => item.age == 31)
+// console.log(user);
+// let user = users.filter(item => item.name === "Fran")
+// console.log(user);
+// let checkAge = users.map(item => item.age = 17)
+// console.log(checkAge);
+// console.log(users);
+
