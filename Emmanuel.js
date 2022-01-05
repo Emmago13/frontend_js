@@ -487,7 +487,6 @@
 //   Ann: 160,
 //   Pete: 130
 // }
-
 // function sum(object) {
 //     let sum = 0;
 //     for (const key in object) {
@@ -497,7 +496,7 @@
 //     }
 //     return sum;
 // }
-// let summed =sum(salaries);
+// let summed = sum(salaries);
 // console.log(summed);
 
 // let menu = {

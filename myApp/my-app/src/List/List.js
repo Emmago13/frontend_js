@@ -1,12 +1,11 @@
-import React, { Fragment, useState } from 'react'
-import Button from '../Button/Button'
-import './List.css'
-import check from './img/check.svg'
-import checked from './img/checked.svg'
+import React, { Fragment, useState } from 'react';
+import './List.css';
+import check from './img/check.svg';
+import checked from './img/checked.svg';
 
 const List = () => {
     const [List,setList] = useState([
-        {name:"hacer tarea"},
+        {name:"Write your to do list"},
     ])
     const [task,setTask] = useState("")
 
@@ -46,23 +45,26 @@ const List = () => {
 
     return(
         <Fragment>
-            <div className="display" >
-                <input type="text" onChange={(event)=> handlerChange(event)} value={task} />
-                <Button handlerClick={addTask} text="Add" />
-            </div>
-            <div>
-                <ul className="dsp" >
-                    {List.map((todo)=>(
-                        <div key={todo.id} className="list-todo" >
-                            <h3>{todo.name}</h3>
-                            <span onClick={()=>handlerChecked(todo.id)} >
-                                <img src={todo.checked ? checked : check} />
-                            </span>
-                            <span className="remove-todo" onClick={()=>handlerRemove(todo.id)} >x</span>
-                        </div>
-                    ))}
-                </ul>
-            </div>
+            <section className='list--section'>
+                <h2>To Do List</h2>
+                <div className="display" >
+                    <input type="text" onChange={(event)=> handlerChange(event)} value={task} />
+                    <button onClick={addTask} className='btn--list' type='sumbit'>Add</button>
+                </div>
+                <div>
+                    <ul className="dsp" >
+                        {List.map((todo)=>(
+                            <div key={todo.id} className="list-todo" >
+                                <h3>{todo.name}</h3>
+                                <span onClick={()=>handlerChecked(todo.id)} >
+                                    <img src={todo.checked ? checked : check} alt='checked'/>
+                                </span>
+                                <span className="remove-todo" onClick={()=>handlerRemove(todo.id)}>x</span>
+                            </div>
+                        ))}
+                    </ul>
+                </div>
+            </section>
         </Fragment>
     )
 }
